@@ -173,7 +173,12 @@ table tr:hover {
 
 .product-card p {
     font-size: 1rem;
-    color: #666;
+    color: #555;
+}
+
+.product-card strong {
+    font-size: 1.2rem;
+    color: #007bff;
 }
 
 /* Footer */
@@ -181,19 +186,28 @@ footer {
     background-color: #007bff;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .btn {
+    background-color: white;
+    color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+footer .btn:hover {
+    background-color: #ffdd57;
 }
 
 footer p {
-    margin: 0;
-}
-
-footer .btn i {
-    font-size: 36px;
-    color: white;
-    margin-right: 10px;
-}
-
-footer .btn:hover i {
-    color: #ffdd57; /* Warna ikon saat hover */
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
