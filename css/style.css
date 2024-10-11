@@ -1,198 +1,197 @@
-/* Pengaturan Dasar */
 body {
-    font-family: 'Poppins', sans-serif; /* Font untuk seluruh halaman */
-    margin: 0; /* Menghapus margin default */
-    padding: 0; /* Menghapus padding default */
-    background-color: #f4f4f4; /* Warna latar belakang */
-    color: #333; /* Warna teks default */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradien untuk latar belakang header */
-    color: white; /* Warna teks di header */
-    padding: 5px 10px; /* Mengurangi padding */
-    text-align: center; /* Rata tengah untuk konten di header */
-    position: sticky; /* Membuat header tetap di atas saat scroll */
-    top: 0; /* Posisi atas */
-    z-index: 1000; /* Z-index untuk mengatasi tumpang tindih */
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-container {
-    display: flex; /* Flexbox untuk menempatkan logo dan teks berdampingan */
-    align-items: center; /* Rata tengah secara vertikal */
-    justify-content: center; /* Pusatkan logo dan teks */
-    margin-bottom: 5px; /* Jarak bawah logo dan teks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
 .logo-container img {
-    width: 120px; /* Ukuran logo yang lebih kecil */
-    height: auto; /* Memastikan proporsi gambar */
-    margin-right: 10px; /* Jarak antara logo dan teks */
-    filter: brightness(3); /* Mencerahkan gambar */
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(3);
 }
 
 header h1 {
-    font-size: 2.5rem; /* Ukuran teks judul yang lebih kecil */
-    margin: 0; /* Menghapus margin pada judul */
+    font-size: 2.5rem;
+    margin: 0;
 }
 
 nav ul {
-    list-style-type: none; /* Menghapus bullet pada daftar */
-    padding: 0; /* Menghapus padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Menampilkan item daftar secara horizontal */
-    margin-right: 20px; /* Jarak antara item */
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white; /* Warna teks link */
-    text-decoration: none; /* Menghapus garis bawah pada link */
-    font-weight: 600; /* Berat font untuk link */
-    transition: color 0.3s ease; /* Efek transisi saat hover */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffdd57; /* Warna saat hover */
+    color: #ffdd57;
 }
 
 /* Konten Utama */
 .main-content {
-    padding: 40px; /* Jarak dalam konten utama */
-    max-width: 1200px; /* Lebar maksimum konten */
-    margin: auto; /* Memusatkan konten */
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .intro-text {
-    font-size: 1.2rem; /* Ukuran teks intro */
-    line-height: 1.6; /* Jarak antar baris */
-    margin-bottom: 30px; /* Jarak bawah */
-    text-align: justify; /* Rata kiri dan kanan */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 h2 {
-    font-size: 2rem; /* Ukuran teks sub-judul */
-    color: #007bff; /* Warna sub-judul */
-    margin-bottom: 20px; /* Jarak bawah sub-judul */
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
 }
 
 /* Tabel Layanan */
 table {
-    width: 100%; /* Lebar tabel penuh */
-    border-collapse: collapse; /* Menghapus jarak antar border */
-    margin-bottom: 40px; /* Jarak bawah tabel */
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
 }
 
 table, th, td {
-    border: 1px solid #ddd; /* Border untuk tabel */
-    padding: 15px; /* Jarak dalam sel */
-    text-align: left; /* Rata kiri untuk teks */
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
 }
 
 th {
-    background-color: #007bff; /* Warna latar belakang header tabel */
-    color: white; /* Warna teks header tabel */
+    background-color: #007bff;
+    color: white;
 }
 
 td {
-    background-color: #fff; /* Warna latar belakang sel */
+    background-color: #fff;
 }
 
 table tr:hover {
-    background-color: #f1f1f1; /* Warna saat hover pada baris tabel */
+    background-color: #f1f1f1;
 }
 
 /* Formulir Kontak */
 .contact-form {
-    background-color: white; /* Warna latar belakang formulir */
-    padding: 20px; /* Jarak dalam formulir */
-    border-radius: 10px; /* Sudut membulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada formulir */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input, 
 .contact-form textarea {
-    width: 100%; /* Lebar penuh */
-    padding: 10px; /* Jarak dalam input */
-    margin-bottom: 15px; /* Jarak bawah */
-    border: 1px solid #ccc; /* Border untuk input */
-    border-radius: 5px; /* Sudut membulat */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact-form textarea {
-    resize: none; /* Menonaktifkan resize */
+    resize: none;
 }
 
 .contact-form button {
-    background-color: #007bff; /* Warna latar belakang tombol */
-    color: white; /* Warna teks tombol */
-    padding: 10px 20px; /* Jarak dalam tombol */
-    border: none; /* Menghapus border default */
-    border-radius: 5px; /* Sudut membulat */
-    cursor: pointer; /* Mengubah kursor saat hover */
-    transition: background-color 0.3s ease; /* Efek transisi pada tombol */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3; /* Warna tombol saat hover */
+    background-color: #0056b3;
 }
 
 /* Daftar Produk */
 .product-container {
-    display: flex; /* Flexbox untuk produk */
-    justify-content: space-between; /* Jarak antar produk */
-    flex-wrap: wrap; /* Membungkus produk di baris berikutnya */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-card {
-    background-color: white; /* Warna latar belakang produk */
-    border-radius: 10px; /* Sudut membulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada produk */
-    padding: 20px; /* Jarak dalam produk */
-    width: 45%; /* Lebar produk */
-    margin-bottom: 20px; /* Jarak bawah produk */
-    text-align: center; /* Rata tengah untuk teks produk */
-    transition: transform 0.3s ease; /* Efek transisi saat hover */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-10px); /* Efek hover produk */
+    transform: translateY(-10px);
 }
 
 .product-card img {
-    max-width: 100%; /* Lebar maksimum gambar */
-    height: auto; /* Proporsi gambar */
-    border-radius: 10px; /* Sudut membulat pada gambar */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .product-card h3 {
-    font-size: 1.5rem; /* Ukuran teks nama produk */
-    margin: 15px 0; /* Jarak atas dan bawah */
+    font-size: 1.5rem;
+    margin: 15px 0;
 }
 
 .product-card p {
-    font-size: 1rem; /* Ukuran teks deskripsi produk */
-    color: #666; /* Warna deskripsi */
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Footer */
 footer {
-    background-color: #007bff; /* Warna latar belakang footer */
-    color: white; /* Warna teks footer */
-    text-align: center; /* Rata tengah untuk teks footer */
-    padding: 20px; /* Jarak dalam footer */
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 footer p {
-    margin: 0; /* Menghapus margin */
+    margin: 0;
 }
 
 footer .btn i {
-    font-size: 36px; /* Ukuran ikon di footer */
-    color: white; /* Warna ikon */
-    margin-right: 10px; /* Jarak antara ikon */
+    font-size: 36px;
+    color: white;
+    margin-right: 10px;
 }
 
 footer .btn:hover i {
