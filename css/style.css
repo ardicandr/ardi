@@ -196,22 +196,20 @@ footer .btn {
     background-color: transparent;
     color: #007bff;
     padding: 10px;
-    border-radius: 5px;
+    border: none;
     text-align: center;
     margin: 0 10px;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 footer .btn i {
     font-size: 24px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 5px;
+    color: #007bff;
 }
 
 footer .btn:hover i {
-    background-color: #ffdd57;
+    color: #ffdd57;
 }
 
 footer p {
