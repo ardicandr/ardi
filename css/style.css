@@ -183,7 +183,7 @@ table tr:hover {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background-color: #007bff; /* Warna solid biru */
     color: white;
     text-align: center;
     padding: 20px 0;
