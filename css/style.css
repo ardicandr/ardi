@@ -204,12 +204,12 @@ footer .btn {
 
 footer .btn i {
     font-size: 24px;
-    color: #000000;
+    color: #000000 !important;
     transition: color 0.3s ease;
 }
 
 footer .btn:hover i {
-    color: #ffdd57;
+    color: #ffdd57 !important;
 }
 
 footer p {
