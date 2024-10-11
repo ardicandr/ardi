@@ -183,7 +183,7 @@ table tr:hover {
 
 /* Footer */
 footer {
-    background-color: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     text-align: center;
     padding: 20px 0;
