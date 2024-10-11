@@ -204,12 +204,12 @@ footer .btn {
 
 footer .btn i.fab {
     font-size: 24px;
-    color: #000000 !important;
+    color: #000000;
     transition: color 0.3s ease;
 }
 
 footer .btn:hover i.fab {
-    color: #ffdd57 !important;
+    color: #ffdd57;
 }
 
 footer p {
