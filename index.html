@@ -3,97 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeknoExpress</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Styling khusus untuk ikon media sosial */
-        .btn {
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            margin-right: 10px;
-        }
+    <title>TeknoExpress - Pengiriman Cepat dan Aman</title>
 
-        .btn i {
-            color: #333; /* Warna default ikon */
-            font-size: 36px; /* Ukuran ikon */
-        }
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        .btn:hover i {
-            color: #007bff; /* Warna ikon saat hover */
-        }
-
-        /* Styling untuk garis pemisah */
-        header, section, footer {
-            padding: 20px;
-        }
-
-        header, footer {
-            border-bottom: 2px solid #ccc; /* Garis pemisah di bawah header dan footer */
-        }
-
-        section {
-            border-bottom: 2px solid #ccc; /* Garis pemisah di bawah konten */
-        }
-
-        table {
-            width: 60%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f4f4f4;
-        }
-
-        /* Formulir kontak */
-        .contact-form {
-            width: 60%; /* Atur lebar form menjadi 60% */
-            margin-top: 20px;
-            margin-left: 0; /* Posisi kiri */
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%; /* 100% dari 60% lebar form */
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        /* Atur lebar kolom pesan sama dengan input nama dan email */
-        .contact-form textarea {
-            height: 150px; /* Tinggi tetap */
-            resize: none; /* Nonaktifkan resize */
-        }
-
-        .contact-form button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #0056b3;
-        }
-
-    </style>
+    <!-- Menambahkan Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 </head>
 <body>
 
 <!-- Header -->
 <header>
-    <img src="https://media.istockphoto.com/id/1489024120/id/vektor/ilustrasi-gambar-logo-pengiriman-mobil.jpg?s=170667a&w=0&k=20&c=ue2XBX9nzZDNJC2GuDf7zJ6-Nb-Iomet70az5s5vQF4=" alt="Logo TeknoExpress" width="200" height="200">
-    <h1>TeknoExpress</h1>
+    <div class="logo-container">
+        <img src="assets/images/TeknoExpress.png" alt="Logo TeknoExpress">
+        <h1>TeknoExpress</h1>
+    </div>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -104,8 +29,8 @@
 </header>
 
 <!-- Content -->
-<section>
-    <p><strong>TeknoExpress</strong> adalah solusi pengiriman barang yang cepat, aman, dan efisien. Kami hadir untuk melayani kebutuhan pengiriman Anda, baik untuk dokumen penting, barang berharga, hingga pengiriman massal. Dengan jangkauan yang luas dan layanan pelanggan yang siap 24/7, kami memastikan setiap pengiriman sampai tepat waktu dan dalam kondisi baik.</p>
+<section class="main-content">
+    <p class="intro-text"><strong>TeknoExpress</strong> adalah solusi pengiriman barang yang cepat, aman, dan efisien. Kami hadir untuk melayani kebutuhan pengiriman Anda, baik untuk dokumen penting, barang berharga, hingga pengiriman massal.</p>
 
     <h2>Layanan Unggulan Kami</h2>
     <table>
@@ -148,6 +73,33 @@
 
         <button type="submit">Kirim</button>
     </form>
+
+    <h2>Daftar Produk</h2>
+    <div class="product-container">
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <img src="assets/images/kotak-besar.jpg" alt="Kotak Pengiriman Besar">
+            <h3>Kotak Pengiriman Besar</h3>
+            <p>Kotak pengiriman besar yang cocok untuk mengirim barang dalam jumlah besar atau berukuran besar. Terbuat dari bahan karton tebal, kotak ini kuat dan aman.</p>
+            <p><strong>Harga: Rp 100.000</strong></p>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-card">
+            <img src="assets/images/amplop-ekspres.jpg" alt="Amplop Pengiriman Ekspres">
+            <h3>Amplop Pengiriman Ekspres</h3>
+            <p>Amplop pengiriman khusus untuk dokumen penting yang memerlukan pengiriman cepat. Dengan fitur tahan air dan segel aman.</p>
+            <p><strong>Harga: Rp 10.000</strong></p>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-card">
+            <img src="assets/images/plastik-pengiriman.jpg" alt="Plastik Pengiriman">
+            <h3>Plastik Pengiriman</h3>
+            <p>Plastik pengiriman berkualitas tinggi untuk menjaga barang kiriman tetap aman dari kerusakan akibat air atau debu selama proses pengiriman.</p>
+            <p><strong>Harga: Rp 5.000</strong></p>
+        </div>
+    </div>
 </section>
 
 <!-- Footer -->
@@ -155,11 +107,11 @@
     <div>
         <!-- Instagram Button -->
         <a href="https://www.instagram.com/ardii_candra?igsh=MmFxNTU1NTBiMWNl" target="_blank" class="btn">
-            <i class="fab fa-instagram"></i> <!-- Icon Instagram -->
+            <i class="fab fa-instagram"></i>
         </a>
         <!-- YouTube Button -->
         <a href="https://youtube.com/@ardi_candra7?si=oCBmtKrEBacfOwSb" target="_blank" class="btn">
-            <i class="fab fa-youtube"></i> <!-- Icon YouTube -->
+            <i class="fab fa-youtube"></i>
         </a>
     </div>
     <p>&copy; 2024 TeknoExpress. Semua Hak Dilindungi.</p>
