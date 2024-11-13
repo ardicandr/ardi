@@ -98,7 +98,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center;
 }
 
 .hero-content .hero-text {
@@ -129,6 +129,7 @@ nav ul li a:hover {
     background-color: #e0e0e0;
     color: #16213e;
 }
+
 
 /* Styling untuk Produk */
 .main-content {
@@ -301,4 +302,81 @@ footer {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+/* Style Futuristik untuk About Section */
+.about-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f0f2d, #1a1a45);
+    color: #e0e0e0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle at center, rgba(0, 173, 181, 0.2), transparent);
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    color: #00adb5;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #00fff5;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #00adb5;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+.about-content p, .about-content ul {
+    font-size: 1rem;
+    color: #c0e8e8;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.about-content ul li {
+    padding-left: 1em;
+    position: relative;
+}
+
+.about-content ul li::before {
+    content: "⚙";
+    position: absolute;
+    left: 0;
+    color: #00fff5;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+/* Efek Cahaya */
+.neon-text {
+    color: #00adb5;
+    text-shadow: 0 0 5px #00adb5, 0 0 10px #00adb5, 0 0 15px #00adb5, 0 0 20px rgba(0, 255, 255, 0.7);
 }
