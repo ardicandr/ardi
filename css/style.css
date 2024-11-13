@@ -82,92 +82,60 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    /* Menampilkan menu saat tombol di klik */
     #menu.active {
         display: flex;
     }
 }
 
-/* Hero Section */
-.hero-section {
-    background-color: #007bff;
+/* Footer */
+footer {
+    background-color: #0056b3;
     color: white;
-    padding: 50px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.hero-content {
-    max-width: 1200px;
-    margin: auto;
+.footer-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
-.hero-content img {
-    width: 50%;
-    border-radius: 10px;
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
-.hero-text {
-    width: 40%;
-}
-
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn-hero {
-    background-color: white;
-    color: #007bff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* Styling untuk konten lainnya */
-.main-content {
-    padding: 50px;
-    background-color: #fff;
-}
-
-.main-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.product-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.product-card {
-    width: 30%;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.product-card h3 {
-    font-size: 1.5rem;
+.footer-content .social-media {
     margin-top: 10px;
+}
+
+.footer-content .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-content .social-media a:hover {
+    color: #ffdd57;
+}
+
+/* Styling untuk Form Kontak */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .contact-form input,
@@ -186,4 +154,9 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
 }
