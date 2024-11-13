@@ -1,3 +1,4 @@
+/* CSS dasar */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -30,7 +31,6 @@ header {
     margin-right: 10px;
 }
 
-/* Menu Icon */
 .menu-icon {
     font-size: 24px;
     color: white;
@@ -38,37 +38,7 @@ header {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #007bff;
-        width: 200px;
-        padding: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-align: right;
-    }
-}
-
+/* Menu untuk layar besar */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -89,4 +59,130 @@ nav ul li a:hover {
     color: #ffdd57;
 }
 
-/* CSS tambahan untuk bagian lain (hero, produk, formulir, dll.) seperti dalam kode awal */
+/* Menu responsif */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #007bff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    width: 40%;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Styling untuk konten lainnya */
+.main-content {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 30%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
