@@ -91,7 +91,7 @@ nav ul li a:hover {
 .hero-section {
     background: linear-gradient(135deg, #16213e, #0f3460);
     color: white;
-    padding: 40px 0; /* Ubah padding menjadi lebih kecil */
+    padding: 20px 0; /* Ubah padding menjadi lebih kecil */
     text-align: center;
     display: flex;
     align-items: center;
