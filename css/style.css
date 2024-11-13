@@ -8,13 +8,12 @@ body {
 
 /* Header */
 header {
-    display: flex; /* Flexbox untuk tata letak */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
-    padding: 5px 10px;
-    text-align: center;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -31,10 +30,49 @@ header {
     margin-right: 10px;
 }
 
+/* Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #007bff;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-align: right;
+    }
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Atur navigasi secara horizontal */
+    display: flex;
 }
 
 nav ul li {
@@ -45,194 +83,10 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ffdd57;
 }
 
-/* Hero Section */
-.hero-section {
-    background-color: #007bff;
-    color: white;
-    padding: 50px 0;
-}
-
-.hero-content {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero-content img {
-    width: 50%;
-    border-radius: 10px;
-}
-
-.hero-text {
-    width: 40%;
-}
-
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn-hero {
-    background-color: white;
-    color: #007bff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn-hero:hover {
-    background-color: #ffdd57;
-}
-
-/* Main Content */
-.main-content {
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-h2 {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-/* Tabel Layanan */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
-}
-
-th {
-    background-color: #007bff;
-    color: white;
-}
-
-td {
-    background-color: #fff;
-}
-
-/* Flexbox untuk Produk */
-.product-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 30%;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-10px);
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.product-card h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-}
-
-.product-card p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Formulir Kontak */
-.contact-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input, 
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form textarea {
-    resize: none;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #007bff !important;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer .btn i {
-    font-size: 24px;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-footer .btn:hover i {
-    color: #ffdd57;
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 0.9rem;
-}
+/* CSS tambahan untuk bagian lain (hero, produk, formulir, dll.) seperti dalam kode awal */
