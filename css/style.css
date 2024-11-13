@@ -3,8 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #111;
+    color: #e0e0e0;
 }
 
 /* Header */
@@ -12,9 +12,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -26,19 +27,18 @@ header {
 }
 
 .logo-container img {
-    width: 120px;
-    height: auto;
-    margin-right: 10px;
+    width: 100px;
+    margin-right: 15px;
 }
 
 .menu-icon {
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
     display: none;
 }
 
-/* Menu untuk layar besar */
+/* Menu */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -46,17 +46,17 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav ul li a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: 600;
 }
 
 nav ul li a:hover {
-    color: #ffdd57;
+    color: #00adb5;
 }
 
 /* Menu responsif */
@@ -69,7 +69,7 @@ nav ul li a:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #007bff;
+        background-color: #16213e;
         position: absolute;
         top: 60px;
         left: 0;
@@ -87,12 +87,97 @@ nav ul li a:hover {
     }
 }
 
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #16213e, #0f3460);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content .hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #00adb5;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-hero {
+    background-color: #00adb5;
+    color: #111;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-hero:hover {
+    background-color: #e0e0e0;
+    color: #16213e;
+}
+
+/* Styling untuk Produk */
+.main-content {
+    padding: 60px 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-card {
+    width: 250px;
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
 /* Footer */
 footer {
-    background-color: #0056b3;
+    background-color: #16213e;
     color: white;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-content {
@@ -118,45 +203,5 @@ footer {
 }
 
 .footer-content .social-media a:hover {
-    color: #ffdd57;
-}
-
-/* Styling untuk Form Kontak */
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
+    color: #00adb5;
 }
