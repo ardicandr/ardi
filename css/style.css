@@ -91,7 +91,7 @@ nav ul li a:hover {
 .hero-section {
     background: linear-gradient(135deg, #16213e, #0f3460);
     color: white;
-    padding: 60px 0;
+    padding: 40px 0; /* Ubah padding menjadi lebih kecil */
     text-align: center;
     display: flex;
     align-items: center;
@@ -104,20 +104,20 @@ nav ul li a:hover {
 }
 
 .hero-text h2 {
-    font-size: 2.8rem;
+    font-size: 2.2rem; /* Ubah ukuran font menjadi lebih kecil */
     margin-bottom: 15px;
     color: #00adb5;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ubah ukuran font menjadi lebih kecil */
     margin-bottom: 25px;
 }
 
 .btn-hero {
     background-color: #00adb5;
     color: #111;
-    padding: 12px 25px;
+    padding: 10px 20px; /* Ubah padding tombol menjadi lebih kecil */
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
