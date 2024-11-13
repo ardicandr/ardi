@@ -263,9 +263,33 @@ footer {
 
 /* Styling untuk Informasi Kontak */
 .contact-info {
+    margin-top: 20px;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
     color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.contact-info li i {
+    margin-right: 8px;
+    color: #00adb5;
 }
 
 .contact-info a {
@@ -274,5 +298,5 @@ footer {
 }
 
 .contact-info a:hover {
-    color: #e0e0e0;
+    text-decoration: underline;
 }
