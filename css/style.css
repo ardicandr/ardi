@@ -260,3 +260,19 @@ footer {
 .footer-content .social-media a:hover {
     color: #00adb5;
 }
+
+/* Styling untuk Informasi Kontak */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.contact-info a {
+    color: #00adb5;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #e0e0e0;
+}
