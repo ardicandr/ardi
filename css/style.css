@@ -201,6 +201,61 @@ footer {
     font-size: 1.5rem;
     text-decoration: none;
 }
+/* Styling untuk Form Kontak */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    color: #00adb5;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    color: #e0e0e0;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #222831;
+    color: #e0e0e0;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8d99ae;
+}
+
+.contact-form button {
+    background-color: #00adb5;
+    color: #111;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #e0e0e0;
+    color: #111;
+}
 
 .footer-content .social-media a:hover {
     color: #00adb5;
