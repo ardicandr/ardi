@@ -7,10 +7,7 @@
 
     <!-- Menghubungkan file CSS eksternal -->
     <link rel="stylesheet" href="https://ardicandr.github.io/ardi/css/style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- Menambahkan Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 </head>
 <body>
@@ -21,7 +18,10 @@
         <img src="https://ardicandr.github.io/ardi/images/TeknoExpress.png" alt="Logo TeknoExpress">
         <h1>TeknoExpress</h1>
     </div>
-    <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <nav id="menu">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -123,17 +123,23 @@
 <!-- Footer -->
 <footer>
     <div class="social-media">
-        <!-- Instagram Button -->
         <a href="https://www.instagram.com/ardii_candra?igsh=MmFxNTU1NTBiMWNl" target="_blank" class="btn">
             <i class="fab fa-instagram"></i>
         </a>
-        <!-- YouTube Button -->
         <a href="https://youtube.com/@ardi_candra7?si=oCBmtKrEBacfOwSb" target="_blank" class="btn">
             <i class="fab fa-youtube"></i>
         </a>
     </div>
     <p>&copy; 2024 TeknoExpress. Semua Hak Dilindungi.</p>
 </footer>
+
+<!-- JavaScript untuk Toggle Menu -->
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
