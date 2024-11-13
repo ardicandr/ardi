@@ -82,7 +82,8 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    nav.active ul {
+    /* Menampilkan menu saat tombol di klik */
+    #menu.active {
         display: flex;
     }
 }
