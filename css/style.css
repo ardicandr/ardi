@@ -89,16 +89,16 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('https://getwallpapers.com/wallpaper/full/9/1/f/1406506-desktop-wallpaper-dark-2560x1600-image.jpg'); /* Sesuaikan URL ini dengan URL gambar Anda */
+    background-image: url('https://getwallpapers.com/wallpaper/full/9/1/f/1406506-desktop-wallpaper-dark-2560x1600-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Atur tinggi untuk memastikan gambar terlihat */
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center;
 }
 
 .hero-content .hero-text {
@@ -106,20 +106,20 @@ nav ul li a:hover {
 }
 
 .hero-text h2 {
-    font-size: 2.2rem; /* Ubah ukuran font menjadi lebih kecil */
+    font-size: 2.2rem;
     margin-bottom: 15px;
     color: #00adb5;
 }
 
 .hero-text p {
-    font-size: 1rem; /* Ubah ukuran font menjadi lebih kecil */
+    font-size: 1rem;
     margin-bottom: 25px;
 }
 
 .btn-hero {
     background-color: #00adb5;
     color: #111;
-    padding: 10px 20px; /* Ubah padding tombol menjadi lebih kecil */
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -130,20 +130,20 @@ nav ul li a:hover {
     color: #16213e;
 }
 
-
 /* Styling untuk Produk */
 .main-content {
     padding: 60px 20px;
 }
 
 .product-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
 }
 
 .product-card {
-    width: 250px;
+    width: 100%;
     background-color: #1a1a2e;
     padding: 20px;
     border-radius: 12px;
@@ -204,179 +204,14 @@ footer {
     font-size: 1.5rem;
     text-decoration: none;
 }
-/* Styling untuk Form Kontak */
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.contact-form-container h2 {
-    text-align: center;
-    color: #00adb5;
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    color: #e0e0e0;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #222831;
-    color: #e0e0e0;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #8d99ae;
-}
-
-.contact-form button {
-    background-color: #00adb5;
-    color: #111;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.contact-form button:hover {
-    background-color: #e0e0e0;
-    color: #111;
-}
 
 .footer-content .social-media a:hover {
     color: #00adb5;
 }
 
-/* Styling untuk Informasi Kontak */
-.contact-info {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.contact-info h3 {
-    font-size: 1.2rem;
-    color: #00adb5;
-    margin-bottom: 10px;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 8px 0;
-    color: #e0e0e0;
-    font-size: 1rem;
-}
-
-.contact-info li i {
-    margin-right: 8px;
-    color: #00adb5;
-}
-
-.contact-info a {
-    color: #00adb5;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Style Futuristik untuk About Section */
-.about-section {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #0f0f2d, #1a1a45);
-    color: #e0e0e0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.about-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 140%;
-    height: 140%;
-    background: radial-gradient(circle at center, rgba(0, 173, 181, 0.2), transparent);
-    transform: translate(-50%, -50%) rotate(45deg);
-    z-index: 1;
-    opacity: 0.4;
-}
-
-.about-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: auto;
-    color: #00adb5;
-}
-
-.about-content h2 {
-    font-size: 2.5rem;
-    color: #00fff5;
-    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
-    margin-bottom: 20px;
-}
-
-.about-content h3 {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #00adb5;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
-}
-
-.about-content p, .about-content ul {
-    font-size: 1rem;
-    color: #c0e8e8;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.about-content ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.about-content ul li {
-    padding-left: 1em;
-    position: relative;
-}
-
-.about-content ul li::before {
-    content: "⚙";
-    position: absolute;
-    left: 0;
-    color: #00fff5;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
-}
-
-/* Efek Cahaya */
-.neon-text {
-    color: #00adb5;
-    text-shadow: 0 0 5px #00adb5, 0 0 10px #00adb5, 0 0 15px #00adb5, 0 0 20px rgba(0, 255, 255, 0.7);
+/* Responsif untuk Kontainer Produk */
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
 }
